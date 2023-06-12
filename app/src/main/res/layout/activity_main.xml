@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/human" />
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/searchview_bg"
+            android:iconifiedByDefault="false"
+            android:padding="5dp"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="Search your meal here!" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Food Delivery"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="sans-serif"
+        android:text="Categories"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="105dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#fff">
+
+                <ImageView
+                    android:layout_width="0.55in"
+                    android:layout_height="0.75in"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:src="@drawable/burgar" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#fff">
+
+                <ImageView
+                    android:layout_width="0.55in"
+                    android:layout_height="0.75in"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:src="@drawable/momos" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="105dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#fff">
+
+                <ImageView
+                    android:layout_width="0.55in"
+                    android:layout_height="0.75in"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:src="@drawable/pani_puri" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="105dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#fff">
+
+                <ImageView
+                    android:layout_width="0.55in"
+                    android:layout_height="0.75in"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:src="@drawable/roti" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="105dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#fff">
+
+                <ImageView
+                    android:layout_width="0.55in"
+                    android:layout_height="0.75in"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:src="@drawable/img8" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#fff">
+
+                <ImageView
+                    android:layout_width="0.55in"
+                    android:layout_height="0.75in"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:src="@drawable/img7" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:text="Popular"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0.75in"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Delious Momos"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="70dp"
+                    android:text="INR 150"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                    />
+
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="0.75in"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:src="@drawable/img1"
+
+
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0.75in"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Crazy Masala food"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="70dp"
+                    android:text="INR 150"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="0.75in"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:src="@drawable/img2"
+
+
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0.75in"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Chicken Tikka"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="70dp"
+                    android:text="INR 150"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="0.75in"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:src="@drawable/img4" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0.75in"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Chicken Biriyani"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="70dp"
+                    android:text="INR 150"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="0.75in"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:src="@drawable/img5"
+
+
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0.75in"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Indouri Poha"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="70dp"
+                    android:text="INR 150"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="0.75in"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:src="@drawable/img6"
+
+
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
